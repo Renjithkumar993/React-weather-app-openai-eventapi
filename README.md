@@ -1,4 +1,4 @@
-# WeatherAPP
+# React-WeatherAPP
 
 ## Introduction
 This is a weather application that provides users with a 5-day weather forecast, personalized recommendations based on the weather, and displays events happening in the city of your choice. The application utilizes the OpenAI API to generate personalized recommendations.
