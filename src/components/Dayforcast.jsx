@@ -11,6 +11,7 @@ const Dayforcast = ({ forecastData, isOn }) => {
 
   const filteredData = forecastData.slice(0, 5 * 8);
   const groupedData = [];
+  
   for (let i = 0; i < filteredData.length; i += 8) {
     groupedData.push(filteredData.slice(i, i + 8));
   }
