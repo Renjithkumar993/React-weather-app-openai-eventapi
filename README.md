@@ -13,6 +13,8 @@ This is a weather application that provides users with a 5-day weather forecast,
 
 # Demo
 
+Deployed link : https://weatherai.herokuapp.com/
+
 ![](./src/assets/React%20App.gif)
 
 # Usage
