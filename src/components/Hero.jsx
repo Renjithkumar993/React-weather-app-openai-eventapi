@@ -137,11 +137,6 @@ export default function Hero() {
         setFivedayForcast(response.data.list);
         setPopoverVisible(false)
 
-        const responseEvent = await searchEvent(city);
-        const responsedata =  responseEvent;
-
-            setEvent(responsedata)
-    
         
 
 
@@ -151,7 +146,12 @@ export default function Hero() {
         const suggestionData = suggestion;
         setSuggestion(suggestionData);
         setLoading(false);
+        
+        const responseEvent = await searchEvent(city);
+        const responsedata =  responseEvent;
 
+            setEvent(responsedata)
+    
      
       } catch (error) {
         console.log("Error occurred while fetching data:", error);

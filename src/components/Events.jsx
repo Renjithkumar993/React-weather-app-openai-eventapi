@@ -7,7 +7,7 @@ export default function Events({ events ,isOn}) {
   return (
     
     <div className='d-flex flex-wrap justify-content-center'>
-      {events.map((event, index) => (
+      {events ? events.map((event, index) => (
 <Zoom>
         <Card key={index} style={{ width: '18rem' }} className={`col-3  ${isOn ? "dark-mode" : "lightmode"}`}>
           <Card.Img variant="top" src={event.images[0].url} alt={event.name} />
@@ -18,7 +18,9 @@ export default function Events({ events ,isOn}) {
         </Card>
         </Zoom>
 
-      ))}
+      )) : (
+        <h1>no events found </h1>
+      )}
     </div>
   );
 }
